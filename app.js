@@ -61,4 +61,17 @@
       }
     });
   }
+
+  // --- Copy link to this minute (uses ?t=seconds; wire to the real player time later) ---
+  var copyBtn = document.querySelector('[data-copy-link]');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var url = location.origin + location.pathname + '?t=0';
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(function () {
+          copyBtn.textContent = 'Link copied';
+        }, function () {});
+      }
+    });
+  }
 })();
