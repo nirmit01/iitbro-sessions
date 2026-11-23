@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sessions | IIT Bro</title>
+<meta name="description" content="Free C++ and Python sessions by your seniors, with notes, quizzes and Ask BRO beside every video.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="guest">
+<div class="app">
+
+  <nav class="sidebar" aria-label="Main">
+    <div class="logo">iitbro</div>
+    <a class="nav-link" href="#">Ask BRO</a>
+    <div class="nav-label">LEARN</div>
+    <a class="nav-link" href="#">Tutorials</a>
+    <a class="nav-link" href="#">Notes</a>
+    <a class="nav-link active" href="index.html"><span>Sessions</span><span class="new">NEW</span></a>
+    <a class="nav-link" href="#">Chapter Weightage</a>
+    <div class="nav-label">PRACTICE</div>
+    <a class="nav-link" href="#">PYQs</a>
+    <a class="nav-link" href="#">Mock Tests</a>
+    <div class="nav-label">CONNECT</div>
+    <a class="nav-link" href="#">Events</a>
+    <a class="nav-link" href="#">MentorX</a>
+  </nav>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="crumbs">Learn / <strong>Sessions</strong></div>
+      <div class="topbar-right">
+        <span class="coins">500 coins</span>
+        <a class="btn btn-ghost" href="#">Join community</a>
+        <a class="btn btn-primary guest-only" href="#" data-signin>Sign in</a>
+        <span class="avatar" title="Click to sign out" data-signout>R</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">FREE LIVE SESSIONS AND RECORDINGS</div>
+      <h1>Learn C++ and Python from your seniors</h1>
+      <p>Watch the full sessions here, with notes, a quiz and Ask BRO beside every video. The first two sessions of each course need no login.</p>
+      <div class="row">
+        <button class="pill on" data-filter="all">All</button>
+        <button class="pill" data-filter="cpp">C++</button>
+        <button class="pill" data-filter="python">Python</button>
+        <button class="pill" data-filter="dsa">DSA</button>
+      </div>
+      <div class="row">
+        <a class="btn btn-primary" href="session.html">Start free session</a>
+        <a class="btn btn-ghost" href="#live">See live classes</a>
+      </div>
+    </section>
+
+    <section class="section" id="live">
+      <article class="card">
+        <div class="tag gold">NEXT LIVE CLASS</div>
+        <div class="title">[Topic of the live class]</div>
+        <div class="sub">[Day, time] with [instructor name]</div>
+        <div class="row" style="align-items:center">
+          <a class="btn btn-primary" href="#">Register</a>
+          <span class="sub" style="font-size:13px">Reminder on WhatsApp or email</span>
+        </div>
+      </article>
+      <article class="card">
+        <div class="tag purple">CONTINUE WATCHING</div>
+        <div class="resume">
+          <div class="thumb-sm">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#e8ebf1"/></svg>
+          </div>
+          <div>
+            <div style="font-size:16px;font-weight:600">C++ from scratch: Session 2</div>
+            <div class="sub" style="font-size:13px;margin-top:4px">18 min left</div>
+          </div>
+        </div>
+        <div class="progress"><div style="width:45%"></div></div>
+        <div class="sub" style="font-size:13px">Shown to signed-in students. Visitors see the first free session instead.</div>
+      </article>
+    </section>
+
+    <section class="section col">
+      <h2>Courses</h2>
+      <div class="grid">
+        <article class="course" data-topic="cpp">
+          <div class="thumb">Thumbnail</div>
+          <div class="body">
+            <div class="name">C++ from scratch</div>
+            <div class="meta">12 sessions · 6 hours · Beginner</div>
+            <div class="free">First 2 sessions free, no login</div>
+            <a class="btn btn-primary" href="session.html">Start course</a>
+          </div>
+        </article>
+        <article class="course" data-topic="python">
+          <div class="thumb">Thumbnail</div>
+          <div class="body">
+            <div class="name">Python for beginners</div>
+            <div class="meta">10 sessions · 5 hours · Beginner</div>
+            <div class="free">First 2 sessions free, no login</div>
+            <a class="btn btn-primary" href="session.html">Start course</a>
+          </div>
+        </article>
+        <article class="course" data-topic="dsa">
+          <div class="thumb">Thumbnail</div>
+          <div class="body">
+            <div class="name">DSA in C++</div>
+            <div class="meta">15 sessions · 9 hours · Intermediate</div>
+            <div class="free">First 2 sessions free, no login</div>
+            <a class="btn btn-primary" href="session.html">Start course</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <article class="card">
+        <div class="title" style="font-size:18px">Join the BRO community on WhatsApp</div>
+        <div class="sub">Doubts, new session alerts and live class links in one place.</div>
+        <a class="btn btn-ghost" style="align-self:flex-start" href="#">Join on WhatsApp</a>
+      </article>
+      <article class="card">
+        <div class="title" style="font-size:18px">Earn coins while you learn</div>
+        <div class="sub">Finish a session, take a quiz or invite a friend to earn coins. Spend them on Ask BRO and mock tests.</div>
+        <div style="font-size:14px;color:var(--gold);font-weight:600">Your balance: 500 coins</div>
+      </article>
+    </section>
+
+    <section class="section" style="padding-bottom:48px">
+      <form class="request" id="request-form">
+        <label for="topic">Request the next session</label>
+        <div class="row">
+          <input class="input" id="topic" type="text" placeholder="Which topic should we cover next?">
+          <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
